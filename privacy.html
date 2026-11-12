@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>McReviewy Privacy Policy</title>
+<meta name="description" content="What McReviewy reads, keeps and sends: it runs in your browser, and the publisher collects nothing.">
+<style>
+:root { --bg:#fff; --fg:#1d2329; --muted:#5b6670; --line:#d9dee3; --link:#1f5fbf; --code:#f2f4f6; }
+@media (prefers-color-scheme: dark) { :root { --bg:#16191c; --fg:#e4e8ec; --muted:#9aa5b0; --line:#343a40; --link:#7fb0ff; --code:#23282d; } }
+body { margin:0; background:var(--bg); color:var(--fg); font:16px/1.6 system-ui,-apple-system,"Segoe UI",sans-serif; }
+main { max-width:760px; margin:0 auto; padding:40px 16px 64px; }
+h1 { font-size:1.9em; line-height:1.2; margin:0 0 .3em; }
+h2 { font-size:1.25em; margin:2em 0 .5em; }
+.meta { color:var(--muted); margin-top:0; }
+a { color:var(--link); }
+code { background:var(--code); padding:.1em .35em; border-radius:4px; font-size:.92em; }
+table { border-collapse:collapse; width:100%; margin:1em 0; }
+th, td { text-align:left; vertical-align:top; padding:8px 10px; border-bottom:1px solid var(--line); }
+th { font-weight:600; }
+li { margin:.4em 0; }
+</style>
+</head>
+<body>
+<main>
+<h1>McReviewy Privacy Policy</h1>
+<p class="meta">McReviewy browser extension · Publisher: Shane Ison · Effective 7 November 2026</p>
+
+<p>McReviewy is a PDF viewer for reviewing building drawings. It runs entirely in your browser. The publisher runs no
+server, collects no data, and receives nothing from the extension: no analytics, no telemetry, no crash reports and no
+advertising.</p>
+
+<h2>What the extension reads</h2>
+<ul>
+  <li><strong>PDF documents you open.</strong> McReviewy replaces the browser's PDF viewer, so when you open a PDF on
+    any website or from your computer, the extension loads that file to show it. To do this it needs access to all
+    sites and sees the address of PDFs you open. It does not read, record or send the other pages you visit.</li>
+  <li><strong>City of Calgary permit pages.</strong> When you are signed in to the City of Calgary's DBA permit site
+    (<code>dbapermit.calgary.ca</code>) and open a project page, the extension reads the project number, address,
+    land-use district and project type shown in the page's header, so drawings for that project can be checked against
+    the address. It may also fetch a project's summary and details pages using your existing sign-in. It never writes
+    or submits anything to that site.</li>
+  <li><strong>Your activity in the viewer, for the review timer.</strong> If the permit timer is on, the extension
+    records how long a review is open and pauses when the computer is locked or idle. It uses the browser's idle
+    signal only for this and does not record what you do.</li>
+</ul>
+
+<h2>What is stored, and where</h2>
+<p>Everything is kept in your browser's own extension storage on your device:</p>
+<table>
+  <tr><th>Data</th><th>Why</th></tr>
+  <tr><td>Markups, measurements and review notes for each drawing</td><td>So your work is still there when you reopen the drawing</td></tr>
+  <tr><td>Permit project records (project number, address, land-use district, project type, page address); the most recent 300 are kept</td><td>To check drawings against the project address</td></tr>
+  <tr><td>Review timer log (time spent per review)</td><td>To show the time spent on each permit</td></tr>
+  <tr><td>Values entered in the RSI and H2K calculators</td><td>So the calculators remember your last inputs</td></tr>
+  <tr><td>Settings, keyboard shortcuts and scripts you add</td><td>To keep your preferences</td></tr>
+</table>
+<p>Settings may be synced between your own devices by your browser's sync (for example, your Microsoft account in
+Edge) if you have browser sync turned on. That sync is provided by the browser, not by McReviewy. When you save
+markups into a PDF, they are written into the PDF file you save.</p>
+
+<h2>Network requests the extension makes</h2>
+<ul>
+  <li>The PDFs you open, from the address you opened them from (including a second file you choose to compare).</li>
+  <li><code>dbapermit.calgary.ca</code>: project pages, using your own sign-in, as described above.</li>
+  <li><code>data.calgary.ca</code>: the City of Calgary's public building permit data, looked up by permit number to
+    find a permit's address. Only the permit number is sent.</li>
+  <li><code>trustlist.adobe.com</code>: Adobe's public list of trusted certificates, downloaded to check digital
+    seals on drawings. Nothing about you or your documents is sent.</li>
+</ul>
+<p>No other requests are made, and no data is sent to the publisher or any third party.</p>
+
+<h2>Sharing and sale</h2>
+<p>The publisher does not collect, sell, rent or share any personal information. No data is used for advertising,
+profiling or credit decisions.</p>
+
+<h2>Your control</h2>
+<ul>
+  <li>The Options page can turn off the automatic PDF take-over, or limit it to chosen sites.</li>
+  <li>The Options page can export the extension's stored data to a file, or replace it with a file you choose.</li>
+  <li>Removing the extension deletes everything it stored in the browser.</li>
+</ul>
+
+<h2>Changes</h2>
+<p>If this policy changes, the new version will be posted at this address with a new effective date.</p>
+
+<h2>Contact</h2>
+<p>Questions about this policy: Shane Ison, <a href="mailto:isonshane@outlook.com">isonshane@outlook.com</a>.</p>
+</main>
+</body>
+</html>
